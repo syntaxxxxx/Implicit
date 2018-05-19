@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/margin"
+    android:layout_marginRight="@dimen/margin"
+    android:layout_marginTop="@dimen/margin"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.idn.materipertama.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.idn.materipertama.MainActivity">
+
+        <Button
+
+            android:id="@+id/btn_browser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/b" />
+
+        <Button
+
+            android:id="@+id/btn_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alarm" />
+
+        <Button
+
+            android:id="@+id/btn_audio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/a" />
+
+        <Button
+
+            android:id="@+id/btn_audio_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aa" />
+
+        <Button
+
+            android:id="@+id/btn_bluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bluetooth" />
+
+        <Button
+
+            android:id="@+id/btn_call_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/call_phone" />
+
+        <Button
+
+            android:id="@+id/btn_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/camera" />
+
+        <Button
+
+            android:id="@+id/btn_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email_client" />
+
+        <Button
+
+            android:id="@+id/btn_sms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sms" />
+
+        <Button
+
+            android:id="@+id/btn_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_to_speech" />
+
+        <Button
+
+            android:id="@+id/btn_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/video" />
+
+        <Button
+
+            android:id="@+id/btn_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi" />
+
+    </LinearLayout>
+
+</ScrollView>

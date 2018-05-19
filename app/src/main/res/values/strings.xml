@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MateriPertama</string>
+    <string name="b">Browser</string>
+    <string name="alarm">Alarm</string>
+    <string name="a">audio</string>
+    <string name="aa">audio record</string>
+    <string name="bluetooth">bluetooth</string>
+    <string name="call_phone">call phone</string>
+    <string name="camera">camera</string>
+    <string name="email_client">email client</string>
+    <string name="sms">sms</string>
+    <string name="text_to_speech">text to speech</string>
+    <string name="video">video</string>
+    <string name="wifi">wifi</string>
+    <string name="akses_link">akses link</string>
+    <string name="url">http://www.imastudio.co.id</string>
+    <string name="alarmm">Alarm</string>
+</resources>
