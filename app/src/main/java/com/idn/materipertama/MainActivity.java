@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.idn.materipertama.activities.Alarm;
-import com.idn.materipertama.activities.AudioManager;
+import com.idn.materipertama.activities.Audio;
 import com.idn.materipertama.activities.AudioRecord;
 import com.idn.materipertama.activities.BluetoothDevice;
 import com.idn.materipertama.activities.Browser;
@@ -13,7 +13,7 @@ import com.idn.materipertama.activities.CallPhone;
 import com.idn.materipertama.activities.CameraDevice;
 import com.idn.materipertama.activities.EmailClient;
 import com.idn.materipertama.activities.SmsDevice;
-import com.idn.materipertama.activities.TextToSpeech;
+import com.idn.materipertama.activities.Tts;
 import com.idn.materipertama.activities.VideoDevice;
 import com.idn.materipertama.activities.WifiDevice;
 import com.idn.materipertama.myHelper.MyFunction;
@@ -69,7 +69,7 @@ public class MainActivity extends MyFunction {
                 break;
 
             case R.id.btn_audio:
-                intent(AudioManager.class);
+                intent(Audio.class);
                 break;
 
             case R.id.btn_audio_record:
@@ -97,7 +97,7 @@ public class MainActivity extends MyFunction {
                 break;
 
             case R.id.btn_text:
-                intent(TextToSpeech.class);
+                intent(Tts.class);
                 break;
 
             case R.id.btn_video:

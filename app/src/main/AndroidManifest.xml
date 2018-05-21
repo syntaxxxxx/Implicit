@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.idn.materipertama">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,17 +26,19 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.Browser" />
-        <activity android:name=".activities.TextToSpeech" />
         <activity android:name=".activities.WifiDevice" />
         <activity android:name=".activities.EmailClient" />
-        <activity android:name=".activities.AudioManager" />
         <activity android:name=".activities.CallPhone" />
         <activity android:name=".activities.AudioRecord" />
         <activity android:name=".activities.VideoDevice" />
         <activity android:name=".activities.CameraDevice" />
         <activity android:name=".activities.SmsDevice" />
         <activity android:name=".activities.BluetoothDevice" />
-        <activity android:name=".activities.Alarm"></activity>
+        <activity android:name=".activities.Alarm" />
+        <activity android:name=".activities.Audio" />
+        <activity android:name=".activities.Tts">
+
+        </activity>
     </application>
 
 </manifest>
