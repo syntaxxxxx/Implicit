@@ -3,6 +3,8 @@ package com.idn.materipertama.activities;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -18,6 +20,8 @@ import com.idn.materipertama.R;
 import com.idn.materipertama.myHelper.MyFunction;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -82,13 +86,16 @@ public class CameraDevice extends MyFunction {
             case R.id.btn_show:
                 showGallery();
                 break;
+
         }
     }
 
 
     private void showGallery() {
 
-
+        Intent galery = new Intent(Intent.ACTION_PICK,
+                MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        startActivityForResult(galery, 2);
 
     }
 
@@ -143,6 +150,28 @@ public class CameraDevice extends MyFunction {
 
         } else if (requestCode == 2) {
 
+            if (resultCode == RESULT_OK) {
+                Uri locationImages = data.getData();
+                InputStream inputStream = null;
+
+                try {
+
+                    inputStream = getContentResolver()
+                            .openInputStream(locationImages);
+
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
+
+                Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
+                ivShow.setImageBitmap(bitmap);
+
+            } else if (resultCode == RESULT_CANCELED) {
+                toast("Cancel");
+
+            } else {
+                toast("Gagal Menampilkan Gambar");
+            }
         }
     }
 }
